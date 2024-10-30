@@ -91,6 +91,7 @@ class DangDangSaveExeclPipeline:
         self.wb = Workbook()
         self.ws = self.wb.active
         self.ws.append(['书名', '价格', '图片'])
+        mkdir('./dang')
         self.file_name = "./dang/book.xlsx"
 
     def process_item(self, item, spider):
